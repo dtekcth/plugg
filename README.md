@@ -4,8 +4,11 @@
 ## Bidra
 Vi vill gärna ha de senaste (och gamla!) tentorna, om du vill lägga till tentor ser vi gärna att dom har formatet
 ```
-"/<kurskod>/exams/YYYY-mm-dd.pdf" Exempelvis /DAT043/exams/2020-06-12.pdf
-"/<kurskod>/exams/YYYY-mm-dd-solutions.pdf" Exempelvis /DAT043/exams/2020-06-12-solutions.pdf
+"/<kurskod>/exams/YYYY-mm-dd.pdf"
+Exempelvis /DAT043/exams/2020-06-12.pdf
+
+"/<kurskod>/exams/YYYY-mm-dd-solutions.pdf"
+Exempelvis /DAT043/exams/2020-06-12-solutions.pdf
 ```
 Filtypen spelar ingen roll men PDF brukar vara bäst.
 

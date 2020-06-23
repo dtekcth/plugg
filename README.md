@@ -1,5 +1,6 @@
 # Study Guide
 [English below](#English)
+You can contact us by mail: dns@dtek.se
 
 ## Bidra
 Vi vill gärna ha de senaste (och gamla!) tentorna, om du vill lägga till tentor ser vi gärna att dom har formatet

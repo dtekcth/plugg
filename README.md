@@ -14,8 +14,8 @@ Lösning i separat fil
 "/<kurskod>/exams/YYYY-mm-dd-solutions.pdf"
 Exempelvis /DAT043/exams/2020-06-12-solutions.pdf
 
-Om läsningarna ligger i samma fil
-"/<kurskod>/exams/YYYY-mm-dd-solutions.pdf"
+Om lösningarna ligger i samma fil
+"/<kurskod>/exams/YYYY-mm-dd-with-solutions.pdf"
 Exempelvis /DAT043/exams/2020-06-12-with-solutions.pdf
 ```
 Filtypen spelar ingen roll men PDF brukar vara bäst. 
@@ -28,7 +28,7 @@ Personer som bidrar med många tentor/tips kommer att få presenter från DNS!
 The goal of this repository is to collect study materials for the courses that are relevant for the four programmes that belong to the Student Division for Computer Science and Engineering: TKDAT, MPALG, MPCSN and MPHPC. 
 
 ## Contribute
-We'd love to collect old exams, if you have any upload them in the format `/<course code>/exams/YYYY-mm-dd.pdf`. If there are separate solutions, please upload them as `/<course code>/exams/YYYY-mm-dd-solutions.pdf`.
+We'd love to collect old exams, if you have any upload them in the format `/<course code>/exams/YYYY-mm-dd.pdf`. If there are separate solutions, please upload them as `/<course code>/exams/YYYY-mm-dd-solutions.pdf`. If the solutions are in the same file, please name them `/<course code>/exams/YYYY-mm-dd-with-solutions.pdf`.
 
 If you have tips and tricks for courses, please put them in the file `/<course code>/tips.md`. The type of tips we're looking for are things that are good to know or things you wish you knew before taking the course.
 

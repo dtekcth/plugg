@@ -6,11 +6,17 @@ You can contact us by mail: dns@dtek.se
 ## Bidra
 Vi vill gärna ha de senaste (och gamla!) tentorna, om du vill lägga till tentor ser vi gärna att dom har formatet
 ```
+Tenta utan lösningar eller lösningar i separat fil
 "/<kurskod>/exams/YYYY-mm-dd.pdf"
 Exempelvis /DAT043/exams/2020-06-12.pdf
 
+Lösning i separat fil
 "/<kurskod>/exams/YYYY-mm-dd-solutions.pdf"
 Exempelvis /DAT043/exams/2020-06-12-solutions.pdf
+
+Om läsningarna ligger i samma fil
+"/<kurskod>/exams/YYYY-mm-dd-solutions.pdf"
+Exempelvis /DAT043/exams/2020-06-12-with-solutions.pdf
 ```
 Filtypen spelar ingen roll men PDF brukar vara bäst. 
 

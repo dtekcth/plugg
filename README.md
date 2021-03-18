@@ -19,11 +19,11 @@ Om ni har några tips och tricks för kurser, lägg gärna dem i filen `/<kursko
 Personer som bidrar med många tentor/tips kommer att få presenter från DNS!
 
 # English
-The goal of this repository is to collect study materials for the coursescentered around the 
+The goal of this repository is to collect study materials for the courses that are relevant for the four programmes that belong to the Student Division for Computer Science and Engineering: TKDAT, MPALG, MPCSN and MPHPC. 
 
 ## Contribute
 We'd love to collect old exams, if you have any upload them in the format `/<course code>/exams/YYYY-mm-dd.pdf`. If there are separate solutions, please upload them as `/<course code>/exams/YYYY-mm-dd-solutions.pdf`.
 
 If you have tips and tricks for courses, please put them in the file `/<course code>/tips.md`. The type of tips we're looking for are things that are good to know or things you wish you knew before taking the course.
 
-People that contribute several old exams/tips will get a present from DNS!
+People that contribute several old exams/tips will get gifts from DNS!

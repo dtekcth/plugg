@@ -1,0 +1,115 @@
+Programming Languages
+Example Exam, 7 March 2008
+
+Solutions.
+
+1. 
+
+  Dec.    Decl ::= Type Var
+  SDecl.  Stm  ::= Decl ";"
+  SWhile. Stm  ::= "while" "(" Exp ")" Stm
+  SIf.    Stm  ::= "if" "(" Exp ")" Stm "else" Stm
+  SExp.   Stm  ::= Exp ";"
+  EId, EInt.    Exp  ::= Ident | Integer
+  TInt, TDouble Type ::= "int" | "double"
+
+
+2. 
+
+parse tree:
+
+            Stm
+     ---------------------------
+    /   |   |   |               \          
+    |   |   |   |              Stm
+    |   |   |   |   -------------------------------------
+    |   |   |   |  / /    |   \       |       \          \
+    |   |   |   |  | |    |   |      Stm      |         Stm
+    |   |   |   |  | |    |   |     /    \    |        /   \
+    |   |  Exp  |  | |   Exp  |   Decl    \   |      Decl   \
+    |   |   |   |  | |    |   |   /  \     |  |      /  \    \
+    |   | Ident |  | |  Ident | Type Ident |  |    Type Ident |
+    |   |   |   |  | |    |   |  |    |    |  |     |     |   |   
+  while (  foo  ) if (  cond  ) int   x    ; else double  y   ;
+
+
+
+
+AST:
+
+  SWhile 
+    (EId (Ident "foo"))
+    (SIf (EId (Ident "cond"))
+       (SDecl TInt    (Ident "x"))
+       (SDecl TDouble (Ident "y")))
+
+Also accepted: x instead of (Ident "x")
+
+
+3. 
+
+  infer env (exp1 + exp2) =
+    typ := infer env exp1
+    check condition (typ == int || typ == double)
+    check env (exp2 : typ)
+    return typ
+
+  eval env (++x) =
+    val  := lookup env x
+    val' := val + 1
+    env' := update env x val'
+    return (env',val')
+
+  eval env (x++) =
+    val  := lookup env x
+    val' := val + 1
+    env' := update env x val'
+    return (env',val)
+
+4. 
+
+regex:
+
+  (a|b)* a (a|b)
+
+DFA:
+
+  states (named after last two read symbols):
+
+
+  aa, ab:        final
+  ba, bb, start: nonfinal
+
+  transititions:
+          a     b
+  aa      aa    ab
+  ab      ba    bb
+  ba      aa    ab
+  bb      ba    bb
+  start   ba    bb
+   
+
+
+5. 
+
+  compile while (exp) stm =
+    test := getLabel
+    end  := getLabel
+    emit (test:)
+    compile exp
+    emit (if_eq end)
+    compile stm
+    emit (goto test)
+    emit (end:)
+
+  The environment is implicit, and changed at
+  each getLabel by incrementing the label counter.
+  
+  <stack,   code, LABEL:  ; instrs> --> <stack, code, instrs>
+  <stack.0, code, if_eq L ; instrs> --> <stack, code, code(L)>
+  <stack.v, code, if_eq L ; instrs> --> <stack, code, instrs>
+  <stack,   code, goto L  ; instrs> --> <stack, code, code(L)>
+
+
+6. See lecture 10.
+
